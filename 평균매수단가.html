@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>평균 매수 단가 계산기</title>
+</head>
+<body>
+    <h2>평균 매수 단가 계산기</h2>
+    <form id="purchaseForm">
+        <!-- 5개의 매수 가격과 갯수 입력 필드 -->
+        <div id="inputs">
+            <!-- 각 매수 정보 입력 부분 -->
+            <div>
+                <input type="number" placeholder="매수 가격 1" id="price1">
+                <input type="number" placeholder="갯수 1" id="quantity1">
+            </div>
+            <div>
+                <input type="number" placeholder="매수 가격 2" id="price2">
+                <input type="number" placeholder="갯수 2" id="quantity2">
+            </div>
+            <div>
+                <input type="number" placeholder="매수 가격 3" id="price3">
+                <input type="number" placeholder="갯수 3" id="quantity3">
+            </div>
+            <div>
+                <input type="number" placeholder="매수 가격 4" id="price4">
+                <input type="number" placeholder="갯수 4" id="quantity4">
+            </div>
+            <div>
+                <input type="number" placeholder="매수 가격 5" id="price5">
+                <input type="number" placeholder="갯수 5" id="quantity5">
+            </div>
+        </div>
+        <button type="button" onclick="calculateAverage()">평균 계산</button>
+    </form>
+    <div id="result"></div>
+
+    <script src="calculate.js"></script>
+</body>
+</html>
